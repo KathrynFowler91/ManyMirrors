@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html>
+
+<!------------------------------------------------------------------------>
+<!-- head -->
+
+<head>
+	<title>Many Mirrors, all inclusive interfaith group</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity=sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+
+<!------------------------------------------------------------------------>
+<!-- body -->
+
+<body>
+
+<!-- wrapper -->
+<div class="wrapper">
+
+<!-- navbar -->
+<div class="bg-nav">
+<div id="mynavbar" class="navbar">
+	<a href="#home">Home</a>
+	<a href="#about">About</a>
+	<a href="#events">Events</a>
+	<a href="#contact">Contact</a>
+	<a href="javascript:void(0);" class="icon" onclick="navFunction()">
+		<i class="fa fa-bars"></i>
+	</a>
+</div>
+</div>
+
+
+<!-- home -->
+<div class="home fp np"><a name="home"></a>
+<div class="home-content">
+	<img src="images/mm-logotext-black.png">
+	<p>Our mission is to provide a safe space where people can belong, regardless of their faith, spirituality, sexuality or gender identity.</p>
+</div>
+</div>
+
+
+<!-- about -->
+<div class="about np"><a name="about"></a>
+	<h2 class="heading">About</h2>
+	<p class="fl">We recognise the journey to discover our identity, both as LGBT and as a person of faith, can be a lonely and isolating experience. As a group we provide a supportive and social atmosphere for those who identify as LGBTQ+ and of faith to discuss their relationship with both communities and how this has shaped us.</p>
+	<p>Through sharing public events and organising our own social events, we hope to link the LGBT and faith communities.</p>
+</div>
+
+
+<!-- info -->
+<div class="info"><a name="info"></a>
+	<div class="box"><a href="get-involved.html" target="_blank">
+		<i class="fas fa-users"></i>
+		<p>How to get involved</p>
+	</a></div>
+	<div class="box"><a href="vickens-journey.html" target="_blank">
+		<i class="fas fa-road"></i>
+		<p>Vicken's Journey</p>
+	</a></div>
+	<div class="box"><a href="useful-links.html" target="_blank">
+		<i class="fas fa-globe-africa"></i>
+		<p>Useful links</p>
+	</a></div>
+</div>
+
+
+<!-- events -->
+<div class="bg-events"><a name="events"></a>
+<div class="events np">
+
+	<ul id="events-upcoming"></ul>
+    <ul id="events-past"></ul>
+    <script src="js/format-google-calendar.js"></script>
+    <script>
+      formatGoogleCalendar.init({
+        calendarUrl: 'https://www.googleapis.com/calendar/v3/calendars/imtvdia40iq5d7q9u8bcn92huc@group.calendar.google.com/events?key=AIzaSyCbmAGnO4eC8iluuk4SrIRcaQI6qjctDPY',
+        past: false,
+        upcoming: true,
+        sameDayTimes: true,
+        pastTopN: 0,
+        upcomingTopN: 8,
+		dayNames: true,
+        recurringEvents: true,
+        itemsTagName: 'li',
+        upcomingSelector: '#events-upcoming',
+        pastSelector: '#events-past',
+        upcomingHeading: '<h2 class="heading">Events</h2>',
+        pastHeading: '<h2>Past events</h2>',
+        format: ['<p>', '*date*', ' ', '*summary*', '</p> <p class="line2"> &#64 ', '*location*', ' ', '*description*', '</p>'], <!-- '*description*',  -->
+        timeMin: '2016-06-03T10:00:00-07:00',
+        timeMax: '2020-06-03T10:00:00-07:00'
+      });
+    </script>
+	
+	<p>For more information follow the link and if you would like to share an event please get in contact.</p>
+		
+</div>
+</div>
+
+
+
+<!-- contact -->
+<div class="contact np"><a name="contact"></a>
+	<h2 class="heading">Contact</h2>
+	<p>We want to reach out to LGBT faith groups in the Manchester area and create a safe space for all to belong. Message us to join our mailing list or to find out a little more about Many Mirrors.</p>
+	<p>You can also reach us via <a href="https://www.facebook.com/ManyMirrors/" target="_blank">Facebook</a>, <a href="https://twitter.com/manymirrorslgbt"  target="_blank">Twitter</a> and <a href="mailto:manymirrorslgbt@gmail.com?Subject=Website%20Enquiry" target="_top">email</a> and we will respond as soon as we can.</p>
+	
+	<form method="POST" name="contactform" action="php/contact-form-handler.php"> 
+	<p>
+		<label for='name'>Name:</label>
+		<input class="input-short" type="text" name="name">
+	</p>
+	<p>
+		<label for='email'>Email address:</label>
+		<input class="input-short" type="text" name="email">
+	</p>
+	<p>
+		<label for='message'>Message:</label>
+		<textarea class="input-long" name="message"></textarea>
+	</p>
+	<input class="submit-button" type="submit" value="Submit">
+	</form>
+		
+</div>
+
+<!-- footer -->
+<div class="footer">
+	<img src="images/mm-text-black.png" width="220px">
+	<div class="icons">
+		<a href="https://www.facebook.com/ManyMirrors/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+		<a href="https://twitter.com/manymirrorslgbt" target="_blank"><i class="fab fa-twitter-square"></i></a>
+		<a href="mailto:manymirrorslgbt@gmail.com?Subject=Website%20Enquiry" target="_top"><i class="fas fa-at"></i></a>
+		<a href="https://calendar.google.com/calendar/embed?src=imtvdia40iq5d7q9u8bcn92huc%40group.calendar.google.com&ctz=Europe%2FLondon" target="_blank"><i class="far fa-calendar-alt"></i></a>
+	</div>
+</div>
+
+
+<!-- scripts -->
+<script language="JavaScript" src="js/script.js" type="text/javascript"></script>
+
+</div>
+
+</body>
+
+</html>
